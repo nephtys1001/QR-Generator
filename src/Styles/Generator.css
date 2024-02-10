@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.wrapper {
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.input input {
+  border-radius: 4px;
+  width: 200px;
+  height: 10px;
+  padding: 20px;
+
+  font-size: 16px;
+  border: 2px solid #201c1c;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+.input input:focus {
+  border-color: #16dc1c;
+}
+.input button {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 2px solid #9a9a9a;
+  border-radius: 2px;
+  height: 50px;
+  width: 200px;
+
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.input button:hover {
+  background-color: gray;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.qr-code {
+  padding-top: 100px;
+}
+
+.message-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    height: 40px;
+    width: 250px;
+    font-family: "Times New Roman", Times, serif;
+    letter-spacing: 1px;
+    background-color: green;
+    color: azure;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+  
+  .message.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
